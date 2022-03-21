@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "SofterStyleApp",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-item *ngFor="let article of articleTS " (click)="goTo(article.id)">
+      <ion-avatar slot="start">
+        <ion-img [src]="article.link"></ion-img>
+      </ion-avatar>
+      <ion-label>{{article.nom}}</ion-label>
+    </ion-item>
+  </ion-list>
+
+<!-- <ion-button expand="block" fill="outline" (click)="goTo()">Details</ion-button> -->
+<ion-button expand="block" fill="outline" (click)="goToForm()">Ajout article</ion-button>
+<!-- <ion-button expand="block" fill="outline" href="/formulaire">Ajout article</ion-button> -->
+</ion-content>
+<!-- [routerLink]="['../formulaire']" -->

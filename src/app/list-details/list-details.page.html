@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Articles</ion-title>
+    <ion-buttons slot="end">
+      <ion-button size="small"  color="danger" (click)="showConfirm()"> Supprimer </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-label>{{listdetail.nom}}</ion-label>
+
+  <ion-card>
+    <ion-item>
+      <ion-img [src]="listdetail.link"></ion-img>
+    </ion-item>
+    <ion-item>
+    <ion-label>Prix: {{listdetail.prix}}</ion-label>
+    </ion-item>
+  <ion-item>
+    <ion-label>Taille: {{listdetail.taille}}</ion-label>
+  </ion-item>
+<ion-item>
+    <ion-label>Statut: {{listdetail.info.statut}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Categorie: {{listdetail.info.category}}</ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label>Couleur: {{listdetail.info.color}}</ion-label>
+  </ion-item>
+  </ion-card>
+
+</ion-content>

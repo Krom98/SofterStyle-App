@@ -1,0 +1,49 @@
+<ion-header>
+
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Formulaire</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form (ngSubmit)="addForm()" [formGroup]=" ionicForm" >
+    <!-- <ion-item lines="full">
+      <ion-label position="floating">id</ion-label>
+      <ion-input type="text"  placeholder="id" formControlName="id"></ion-input>
+    </ion-item> -->
+    <ion-item lines="full">
+      <ion-label position="floating">Nom</ion-label>
+      <ion-input type="text"  placeholder="Nom" formControlName="nom"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Prix</ion-label>
+      <ion-input type="text"  placeholder="Prix" formControlName="prix"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Taille</ion-label>
+      <ion-input type="text"  placeholder="Taille" formControlName="taille"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Image</ion-label>
+      <ion-input type="text"  placeholder="Image" formControlName="link" ></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Categorie</ion-label>
+      <ion-input type="text"  placeholder="Category" formControlName="category"></ion-input>
+    </ion-item>
+    <ion-item lines="full">
+      <ion-label position="floating">Couleur</ion-label>
+      <ion-input type="text"  placeholder="Couleur" formControlName="color"></ion-input>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="danger" expand="block">Ajouter</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+
+</ion-content>
